@@ -226,6 +226,7 @@ textarea:focus {
 }
 .input-c {
   text-align: center;
+  text-transform: uppercase;
 }
 textarea.input {
   resize: none;
