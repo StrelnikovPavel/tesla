@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Main</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220319111646">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="bg">
+				<picture><source srcset="img/bg.webp" type="image/webp"><img src="img/bg.png?_v=1647681406736" alt=""></picture>
+			</div>
+			<div class="pay">
+				<div class="pay__close">
+					<img src="img/icons/close.svg?_v=1647681406736" alt="Close">
+				</div>
+				<div class="pay__body">
+					<form action="#" class="pay__form form-pay">
+						<span></span>
+						<div class="form-pay__grid">
+							<div class="form-pay__column">
+								<div class="form-pay__line">
+									<div class="form-pay__label">Wallet number</div>
+									<div class="form-pay__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="DKoRkE4wwwC5xDJDKRkccAD2Y7oZnqFxdY" class="input">
+									</div>
+								</div>
+								<div class="form-pay__line">
+									<div class="form-pay__label">Order number</div>
+									<div class="form-pay__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="1230" class="input">
+									</div>
+								</div>
+								<div class="form-pay__line">
+									<div class="form-pay__label">Shipping cost</div>
+									<div class="form-pay__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="60.00 $" class="input">
+									</div>
+								</div>
+							</div>
+							<div class="form-pay__column">
+								<div class="form-pay__inputs">
+									<div class="form-pay__line">
+										<div class="form-pay__label">Dollar amount</div>
+										<div class="form-pay__input">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="1 230.56" class="input">
+										</div>
+									</div>
+									<div class="form-pay__line">
+										<div class="form-pay__label">Dogicoin amount</div>
+										<div class="form-pay__input">
+											<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="8.430.00" class="input">
+										</div>
+									</div>
+								</div>
+								<div class="form-pay__line">
+									<div class="form-pay__label">Delivery date</div>
+									<div class="form-pay__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="1/05/2022" class="input">
+										<div class="form-pay__icon">
+											<img src="img/icons/calendar.svg?_v=1647681406736" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="form-pay__line">
+									<div class="form-pay__label">Total</div>
+									<div class="form-pay__input">
+										<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="1 290.56 $" class="input">
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="form-pay__button">pay</button>
+						<div class="form-pay__img">
+							<picture><source srcset="img/luna-small.webp" type="image/webp"><img src="img/luna-small.png?_v=1647681406736" alt=""></picture>
+						</div>
+						<div class="form-pay__bg">
+							<picture><source srcset="img/bg-form.webp" type="image/webp"><img src="img/bg-form.png?_v=1647681406736" alt=""></picture>
+						</div>
+					</form>
+					<div class="pay__info info-pay">
+						<span></span>
+						<div class="info-pay__code">8 430.00 DOGE</div>
+						<div class="info-pay__price">(1.290.56 USD)</div>
+						<div class="info-pay__qr">
+							<img src="img/icons/qr.svg?_v=1647681406736" alt="">
+						</div>
+						<div class="info-pay__img">
+							<picture><source srcset="img/dog.webp" type="image/webp"><img src="img/dog.png?_v=1647681406736" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="order" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content popup-form">
+				<button data-close type="button" class="popup__close">
+					<img src="img/icons/close.svg?_v=1647681406736" alt="Close">
+				</button>
+				<div class="popup-form__input">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Iliya Kuznetsov" class="input">
+				</div>
+				<div class="popup-form__input">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="iliya@gmail.com" class="input">
+				</div>
+				<div class="popup-form__input">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="+ 7 498 123 45 67" class="input">
+				</div>
+				<div class="popup-form__input">
+					<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="st. Electric, 12" class="input">
+				</div>
+				<div class="popup-form__inputs">
+					<div class="popup-form__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Kyiv" class="input">
+					</div>
+					<div class="popup-form__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input">
+					</div>
+					<div class="popup-form__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="input">
+					</div>
+					<div class="popup-form__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="1" class="input input-c">
+					</div>
+					<div class="popup-form__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="MAY" class="input input-c">
+					</div>
+					<div class="popup-form__input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="22" class="input input-c">
+					</div>
+				</div>
+				<div class="popup-form__quantity">
+					<div class="popup-form__label">Количество</div>
+					<div class="popup-form__items quantity">
+						<div class="quantity__button quantity__button_minus"></div>
+						<div class="quantity__input">
+							<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" value="1">
+						</div>
+						<div class="quantity__button quantity__button_plus"></div>
+					</div>
+				</div>
+				<button type="submit" class="popup-form__button button">ORDER NOW</button>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/app.min.js?_v=20220319111646"></script>
+</body>
+
+</html>
