@@ -861,21 +861,6 @@ body .popup-show::after {
   position: relative;
   z-index: 4;
 }
-.form-pay::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url("../img/icons/pay-bg-1.png") 100% no-repeat;
-  background-size: cover;
-}
-@media (max-width: 43.75em) {
-  .form-pay::before {
-    display: none;
-  }
-}
 .form-pay::after {
   content: "";
   position: absolute;
@@ -1015,24 +1000,39 @@ body .popup-show::after {
     transform: translate(-30%, 35%);
   }
 }
-@media (min-width: 43.75em) {
-  .form-pay__bg {
-    display: none;
-  }
-}
-.form-pay__bg img {
+.form-pay__bg-1 {
+  display: block;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+@media (max-width: 43.75em) {
+  .form-pay__bg-1 {
+    display: none;
+  }
+}
+.form-pay__bg-2 {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: bottom;
 }
 @media (max-width: 29.6875em) {
-  .form-pay__bg img {
+  .form-pay__bg-2 {
     object-position: right;
+  }
+}
+@media (max-width: 43.75em) {
+  .form-pay__bg-2 {
+    display: block;
   }
 }
 
@@ -1051,16 +1051,6 @@ body .popup-show::after {
     border-bottom: 0.15625rem solid #333333;
   }
 }
-.info-pay::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: url("../img/icons/pay-2.png");
-  background-size: cover;
-}
 .info-pay::after {
   content: "";
   position: absolute;
@@ -1078,6 +1068,21 @@ body .popup-show::after {
   width: 100%;
   background-color: #333333;
   z-index: 2;
+}
+.info-pay__bg img {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+@media (max-width: 43.75em) {
+  .info-pay__bg img {
+    object-position: top;
+  }
 }
 .info-pay__code {
   margin-bottom: 0.5rem;
